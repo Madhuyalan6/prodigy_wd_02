@@ -1,0 +1,107 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with gradient background */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff6b6b, #f9ca24, #ff793f); /* Gradient background */
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite; /* Animated gradient */
+    color: #ffffff;
+}
+
+/* Animated gradient keyframes */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.15); /* Slight transparent background */
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+}
+
+/* Title styling */
+h1 {
+    margin-bottom: 20px;
+    color: #f9ca24; /* Bright yellow for title */
+    font-size: 36px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Display styling */
+.display {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #2f16a0; /* Aqua green for display */
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent background for display */
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Button styling */
+.buttons {
+    margin-bottom: 20px;
+}
+
+.button {
+    font-size: 18px;
+    padding: 12px 25px;
+    margin: 5px;
+    border: none;
+    background-color: #ff793f; /* Bright orange buttons */
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.button:hover {
+    background-color: #f0932b; /* Darker orange on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Lap list styling */
+.laps {
+    list-style: none;
+    padding: 0;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.laps li {
+    margin: 10px 0;
+    background-color: #ffbe76; /* Soft orange background for lap items */
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    color: #f72206; /* Deep blue for lap text */
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .display {
+        font-size: 36px;
+    }
+    .button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
